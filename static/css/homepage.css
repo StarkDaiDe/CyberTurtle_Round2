@@ -1,0 +1,484 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+
+
+/* scrollbar */
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 8px;
+  background: linear-gradient( #005e7d 40%,#009a9c 60%)
+}
+
+::-webkit-scrollbar-thumb:hover{
+  border-radius: 8px;
+  background: linear-gradient( #009a9c 40%,#005e7d 60%)
+}
+
+
+
+
+
+/* header */
+
+header img{
+  width: 120px;
+  height: 100%;
+}
+  header {
+    background-color: #1f4260;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    padding: 15px;
+  }
+  
+  header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #1f4260;
+  }
+  
+  header li a {
+    display: block;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  header .logo {
+    display: block;
+    margin-left: 100px;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+
+
+
+  /* button header */
+  header .home  a button{
+    margin-top: 15px;
+    float: right;
+    margin-right: 30px;
+    width: 65px;
+    height: 30px;
+    font-weight: 900;
+    background-color: #009a9c;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    font-family: 'Changa One', sans-serif;
+  }
+  
+  header .game a button{
+    margin-top: 15px;
+    float: right;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin-right: 30px;
+    width: 65px;
+    height: 30px;
+    font-family: 'Changa One', sans-serif;
+    font-weight: 900;
+  }
+
+  header .chatbot  a button{
+    margin-top: 15px;
+    float: right;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin-right: 30px;
+    width: 85px;
+    height: 30px;
+    font-family: 'Changa One', sans-serif;
+    font-weight: 900;
+  }
+  
+  header .recycle-center a button{
+    margin-top: 15px;
+    float: right;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin-right: 30px;
+    width: 148px;
+    height: 30px;
+    font-family: 'Changa One', sans-serif;
+    font-weight: 900;
+  }
+
+  header .home  a button:hover{
+    background-color: #009a9c;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    font-family: 'Changa One', sans-serif;
+  }
+
+  header .game a button:hover{
+    background-color: #009a9c;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    font-family: 'Changa One', sans-serif;
+  }
+
+  header .chatbot  a button:hover{
+    background-color: #009a9c;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    font-family: 'Changa One', sans-serif;
+  }
+
+  header .recycle-center a button:hover{
+    background-color: #009a9c;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    font-family: 'Changa One', sans-serif;
+  }
+  
+
+  /* header menu*/
+  header .menu-icon .navicon:before,
+  header .menu-icon .navicon:after {
+      background: #333;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+  }
+  
+  
+  header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* menu icon */
+  
+  header .menu-icon {
+    cursor: pointer;
+    float: right;
+    margin-right: 30px;
+    padding: 21px;
+    position: relative;
+    user-select: none;
+  }
+  
+  header .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background.2s ease-out;
+    width: 18px;
+  }
+  
+  header .menu-icon .navicon:before {
+      top: 5px;
+      background: #fff;
+
+  }
+  
+  header .menu-icon .navicon:after {
+      top: -5px;
+      background: #fff;
+
+  }
+  
+  /* menu btn */
+  header .menu-btn {
+    display: none;
+  }
+  
+  header .menu-btn:checked ~ .menu {
+    max-height: 400px;
+  }
+  
+  header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+    background: #fff;
+  }
+  
+  header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+    background: #fff;
+  }
+  
+  header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  
+  /* responsive */
+  @media screen and (min-width: 1000px) {
+    header li {
+        float: left;
+    }
+    header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    header .menu-icon {
+        display: none;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .menu {
+        flex-direction: column;
+        align-items: start;
+    }
+    .menu li {
+        margin-left: 30px;
+        align-self: flex-start;
+        margin-bottom: 15px;
+    }
+    .menu li a {
+        padding: 0px;
+        margin-left: 0px;
+    }
+  }
+
+
+  /* body */
+
+  .savpla .VanBan{
+    width: 55%;
+    float: left;
+  }
+
+  .savpla .VanBan h1 b{
+    font-family: 'Changa One', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 0;
+    margin-left: 50px;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000, 
+                1px 1px 0 #000;
+  }
+
+  .savpla .VanBan project{
+    color: #f3ff82;
+    font-family: 'Changa One', sans-serif;
+    margin-left: 40px;
+    font-size: 40px;
+    letter-spacing: 1em;
+  }
+
+  .savpla .VanBan intro{
+    font-size: 20px;
+    font-family: 'Changa One', sans-serif;
+    color : #fff;
+    text-align: justify;
+  }
+
+  .savpla .img{
+    width: 45%; 
+    float: right;
+    height: 100%;
+  }
+
+
+  .btn2{
+    background: transparent;
+    color: #fff;
+    border: 7px solid #009a9c;
+    width: 25%;
+    height: 425px;
+    margin-left: 72px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn2:hover{
+    background:#009a9c;
+  }
+
+
+  .rec_cen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rec_cen img{
+    width: 90%;
+    height: 375px;
+  }
+
+  .btn{
+    margin-top: -230px;
+  }
+
+  .btn .btn1 {
+    margin-left: 600px;
+    margin-top: -520px; 
+    background-color: transparent;
+    color: rgb(255,255,255);
+    color: linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(243,255,130,1) 60%);
+    border: 5px solid;
+    border-image-source: linear-gradient(to bottom, #fff 0%, #f3ff82 100%); 
+    border-image-slice :1;    
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+    box-shadow: 0 0 1px #ccc;
+  }
+
+  .btn .btn1:hover{
+    background: linear-gradient(to bottom, #fff 0%, #f3ff82 100%); 
+    color: #000;
+  }
+
+  .insert_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .insert_img img{
+    width: 90%;
+    height: 375px;
+  }
+
+  .btn3{
+    margin-top: -230px;
+  }
+
+  .btn3 .btn4 {
+    margin-left: 110px;
+    background-color: transparent;
+    color: rgb(255,255,255);
+    color: linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(243,255,130,1) 60%);
+    border: 5px solid;
+    border-image-source: linear-gradient(to bottom, #fff 0%, #f3ff82 100%); 
+    border-image-slice :1;   
+    width: 400px;
+    height: 100px;
+    font-size: 50px;
+    box-shadow: 0 0 1px #ccc;
+  }
+
+  .btn3 .btn4:hover{
+    background: linear-gradient(to bottom, #fff 0%, #f3ff82 100%); 
+    color: black;
+  }
+
+
+
+
+
+
+
+
+
+  /* footer */
+
+  footer {
+    background-color: #1f4260;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer .info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .contact_us h1 b{
+    font-family: 'Changa One', sans-serif;
+    color: #fff;
+    font-weight: 900;
+    font-size: 60px;
+    margin-left: 50px;
+  }
+
+  .contact_us h3 {
+    font-family: 'Changa One', sans-serif;
+    color: #bdb5b5aa;
+    font-weight: 900; 
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  
+  .contact_us h4 b{
+    font-family: 'Changa One', sans-serif;
+    color: #f2f2f2aa;
+    font-weight: 900; 
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  .contact_us h4 p{
+    font-family: 'Changa One', sans-serif;
+    color: #f2f2f2aa;
+    font-weight: 900; 
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  .SM h1 b{
+    color: #527C88;
+    font-size: 60px;
+    font-family: 'Changa One', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+  }
+  
+  .home__social {
+    display: flex;
+  }
+  .home__social-icon {
+    width: max-content;
+    font-size: 40px;
+    color: #fff;
+    transition: 0.5s;
+    margin-left: 40px;
+  }
+  .home__social-icon:hover {
+    color: #6aa040;
+  }
+  
+  .end {
+    color:white;
+    text-align:center;
+    font-size: 15px;
+  }

@@ -1,0 +1,138 @@
+/* body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: rgb(7, 7, 7);
+  margin: 0;
+  padding: 0;
+} */
+
+.chat-box {
+  height: 350px;
+  overflow: auto;
+  padding: 80px;
+}
+
+.chat-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-message {
+  background-color:#272a2b;
+  color: #fff;
+  font-size: 20px;
+ 
+}
+
+.bot-message {
+  background-color: #484848;
+  color: white;
+  font-size: 20px;
+ 
+}
+
+.message-text pre code {
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.user-icon {
+  font-size: 20px;
+  margin-right: 10px;  
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.bot-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+/* footer */
+footer {
+  background-color: #1f4260;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contact_us h1 b{
+  font-family: 'Changa One', sans-serif;
+  color: #fff;
+  font-weight: 900;
+  font-size: 60px;
+  margin-left: 50px;
+}
+
+.contact_us h3 {
+  font-family: 'Changa One', sans-serif;
+  color: #bdb5b5aa;
+  font-weight: 900; 
+  font-size: 40px;
+  margin-left: 50px;
+}
+
+.contact_us h4 b{
+  font-family: 'Changa One', sans-serif;
+  color: #f2f2f2aa;
+  font-weight: 900; 
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.contact_us h4 p{
+  font-family: 'Changa One', sans-serif;
+  color: #f2f2f2aa;
+  font-weight: 900; 
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.SM h1 b{
+  color: #527C88;
+  font-size: 60px;
+  font-family: 'Changa One', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+}
+
+.home__social {
+  display: flex;
+}
+.home__social-icon {
+  width: max-content;
+  font-size: 40px;
+  color: #fff;
+  transition: 0.5s;
+  margin-left: 40px;
+}
+.home__social-icon:hover {
+  color: #6aa040;
+}
+
+.end {
+  color:white;
+  text-align:center;
+  font-size: 15px;
+}

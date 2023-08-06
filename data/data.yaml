@@ -1,0 +1,5 @@
+train: ../train_images/images/train
+val: ../train_images/images/valid
+
+nc: 3
+names: ['battery', 'biological', 'recyclable']

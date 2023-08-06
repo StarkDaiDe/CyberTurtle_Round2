@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  
+  
+  
+  /* scrollbar */
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background: linear-gradient( #005e7d 40%,#009a9c 60%)
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    border-radius: 8px;
+    background: linear-gradient( #009a9c 40%,#005e7d 60%)
+  }
+  
+
+
+
+
+  /* title */
+  .tittle{
+    text-align: center;
+  }
+
+  .tittle b{
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Changa One', sans-serif;
+
+  }
+
+  .tittle rec{
+    color:#fff;
+  }
+
+  .tittle cen{
+    color: #5b7b6b;
+  }
+  
+  
+  
+  
+  /* header */
+  
+  header img{
+    width: 120px;
+    height: 100%;
+  }
+    header {
+      background-color: #1f4260;
+      box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+      position: fixed;
+      width: 100%;
+      z-index: 3;
+      padding: 15px;
+    }
+    
+    header ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      background-color: #1f4260;
+    }
+    
+    header li a {
+      display: block;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    
+    header .logo {
+      display: block;
+      margin-left: 100px;
+      font-size: 2em;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    /* button header */
+    header .center  a button{
+      margin-top: 15px;
+      float: right;
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      margin-right: 30px;
+      width: 90px;
+      height: 30px;
+      font-family: 'Changa One', sans-serif;
+      font-weight: 900;
+    }
+    
+    header .brand button{
+        margin-top: 15px;
+        float: right;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        margin-right: 30px;
+        width: 80px;
+        height: 30px;
+        font-family: 'Changa One', sans-serif;
+        font-weight: 900;
+    }
+  
+    header .category button{
+        margin-top: 15px;
+        float: right;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        margin-right: 30px;
+        width: 120px;
+        height: 30px;
+        font-family: 'Changa One', sans-serif;
+        font-weight: 900;
+    }
+
+    header .input input{
+        margin-top: 15px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        margin-right: 30px;
+        width: 200px;
+        height: 35px;
+        border-radius: 10px;
+        font-family: 'Changa One', sans-serif;
+        font-weight: 900;
+    }
+
+    header .input button{
+        margin-top: 15px;
+        float: right;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        margin-right: 10px;
+        width: 100px;
+        height: 35px;
+        border-radius: 10px;
+        font-family: 'Changa One', sans-serif;
+        font-weight: 900;
+    }
+
+    header .center a button:hover{
+      text-decoration: underline;
+    }
+
+    header .brand button:hover{
+      text-decoration: underline;
+    }
+
+    header .category button:hover{
+      text-decoration: underline;
+    }
+
+
+
+    header .input button:hover{
+      background-color: #fff;
+      color: #000;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      font-family: 'Changa One', sans-serif;
+    }
+    
+  
+    /* header menu*/
+    header .menu-icon .navicon:before,
+    header .menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    
+    
+    header .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    /* menu icon */
+    
+    header .menu-icon {
+      cursor: pointer;
+      float: right;
+      margin-right: 30px;
+      padding: 21px;
+      position: relative;
+      user-select: none;
+    }
+    
+    header .menu-icon .navicon {
+      background: #fff;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background.2s ease-out;
+      width: 18px;
+    }
+    
+    header .menu-icon .navicon:before {
+        top: 5px;
+        background: #fff;
+  
+    }
+    
+    header .menu-icon .navicon:after {
+        top: -5px;
+        background: #fff;
+  
+    }
+
+
+    
+    /* menu btn */
+    header .menu-btn {
+      display: none;
+    }
+    
+    header .menu-btn:checked ~ .menu {
+      max-height: 400px;
+    }
+    
+    header .menu-btn:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+    
+    header .menu-btn:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+      background: #fff;
+    }
+    
+    header .menu-btn:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+      background: #fff;
+    }
+    
+    header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+      top: 0;
+    }
+    
+    
+    /* responsive */
+    @media screen and (min-width: 1000px) {
+      header li {
+          float: left;
+      }
+      header .menu {
+          clear: none;
+          float: right;
+          max-height: none;
+      }
+      header .menu-icon {
+          display: none;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      .menu {
+          flex-direction: column;
+          align-items: start;
+      }
+      .menu li {
+          margin-left: 30px;
+          align-self: flex-start;
+          margin-bottom: 15px;
+      }
+      .menu li a {
+          padding: 0px;
+          margin-left: 0px;
+      }
+    }
+
+
+
+    .card-deck{
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .card-btn{
+      margin: 0 auto;
+    }
+
+    .card-btn .btn button{
+      background-color: transparent;
+      color: #ffffff;
+      border: 7px solid;
+      border-image-source: linear-gradient(to bottom, #005e7d 40%, #abeb88 140%); 
+      border-image-slice :1; 
+      border-radius: inherit;
+      width:  160px;
+      height: 70px;
+      font-size: 30px;
+    }
+
+    .card-btn .btn button:hover{
+      background: linear-gradient(to bottom, #005e7d 40%, #abeb88 140%);
+    }
+
+
+
+    
+
+    
+
+
+.brand-content {
+  display: none;
+  border-radius: 10px;
+  margin-top: 50px;
+  position: absolute;
+  background-color: #005e7d;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.brand-content a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: relative;
+}
+
+.brand-content a:hover {
+  color: #fff;
+  width: 100px;
+}
+
+.brand:hover .brand-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+.category-content {
+  display: none;
+  border-radius: 10px;
+  margin-top: 50px;
+  position: absolute;
+  background-color: #005e7d;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.category-content a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: relative;
+}
+
+.category-content a:hover {
+  color: #fff;
+  width: 100px;
+}
+
+.category:hover .category-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    background-color: #1f4260;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer .info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .contact_us h1 b{
+    font-family: 'Changa One', sans-serif;
+    color: #fff;
+    font-weight: 900;
+    font-size: 60px;
+    margin-left: 50px;
+  }
+
+  .contact_us h3 {
+    font-family: 'Changa One', sans-serif;
+    color: #bdb5b5aa;
+    font-weight: 900; 
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  
+  .contact_us h4 b{
+    font-family: 'Changa One', sans-serif;
+    color: #f2f2f2aa;
+    font-weight: 900; 
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  .contact_us h4 p{
+    font-family: 'Changa One', sans-serif;
+    color: #f2f2f2aa;
+    font-weight: 900; 
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  .SM h1 b{
+    color: #527C88;
+    font-size: 60px;
+    font-family: 'Changa One', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+  }
+  
+  .home__social {
+    display: flex;
+  }
+  .home__social-icon {
+    width: max-content;
+    font-size: 40px;
+    color: #fff;
+    transition: 0.5s;
+    margin-left: 40px;
+  }
+  .home__social-icon:hover {
+    color: #6aa040;
+  }
+  
+  .end {
+    color:white;
+    text-align:center;
+    font-size: 15px;
+  }

@@ -1,0 +1,3 @@
+- File run.py là file main để chạy chương trình
+- Để chạy được thì cần phải cài thêm các thư viện trong file requirements.txt
+- Phiên bản Python tốt nhất để cài các thư viện trên là Python 3.8
